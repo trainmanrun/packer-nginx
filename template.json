@@ -1,0 +1,19 @@
+{
+    "provisioners": [
+      {
+        "type": "shell",
+        "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E bash '{{.Path}}'",
+        "script": "scripts/provision.sh"
+      }
+    ],
+    "builders": [
+      {
+        "communicator": "ssh",
+        "source_path": "trainmanrun/bionic64",
+        "provider": "virtualbox",
+        "add_force": true,
+        "type": "vagrant",
+        "name": "nginx64-vbox"
+      }
+    ]
+  }
