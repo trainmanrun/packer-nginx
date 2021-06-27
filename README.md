@@ -20,3 +20,13 @@ vagrant box add --force --name nginx64 output-nginx64-vbox/package.box
 ```
 bundle exec kitchen test
 ```
+-- Dependencies
+```
+rbenv
+ruby >=2.6
+```
+To install these on MacOS do the following:
+```
+brew install ruby
+brew install rbenv
+```
