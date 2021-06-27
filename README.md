@@ -20,7 +20,7 @@ vagrant box add --force --name nginx64 output-nginx64-vbox/package.box
 ```
 bundle exec kitchen test
 ```
--- Dependencies
+## Dependencies for running kitchen test
 ```
 rbenv
 ruby >=2.6
